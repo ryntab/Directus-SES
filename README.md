@@ -51,9 +51,11 @@ In this example we are sending a test message to two recipients.
 ```
 
 ## Environment Variables
-`EMAIL_FROM="hello@ryntab.com"`
-`EMAIL_TRANSPORT="SES"`
-`EMAIL_SES_CREDENTIALS__ACCESS_KEY_ID="************************"`
-`EMAIL_SES_CREDENTIALS__SECRET_ACCESS_KEY="****************************************"`
-`EMAIL_SES_REGION="us-east-1"`
-`EMAIL_SES_API_VERSION="2010-12-01"`
+```
+EMAIL_FROM="hello@ryntab.com"
+EMAIL_TRANSPORT="SES"
+EMAIL_SES_CREDENTIALS__ACCESS_KEY_ID="************************"
+EMAIL_SES_CREDENTIALS__SECRET_ACCESS_KEY="****************************************"
+EMAIL_SES_REGION="us-east-1"
+EMAIL_SES_API_VERSION="2010-12-01"
+```
