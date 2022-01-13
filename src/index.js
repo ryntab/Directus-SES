@@ -9,14 +9,25 @@ export default (router, { services, exceptions, env }) => {
     apiVersion: env.EMAIL_SES_API_VERSION || "2010-12-01",
     region: env.EMAIL_SES_REGION,
   });
+
   let transporter = nodemailer.createTransport({
     SES: { ses, aws },
   });
 
   router.post("/", (req, res) => {
-	if (typeof(env.EMAIL_SES_CREDENTIALS__ACCESS_KEY_ID) != 'string') return res.send({status: "env: aws access key missing 🐱‍👤"});
-	if (typeof(env.EMAIL_SES_CREDENTIALS__SECRET_ACCESS_KEY) != 'string') return res.send({status: "env: aws secret key missing 👻"});
-	if (typeof(env.EMAIL_SES_REGION) != 'string') return res.send({status: "env: aws region missing 🌎"});
+
+    if (req.accountability.user == null || req.accountability.role == null) {
+      return res.send({
+        status: "Authentication check failed",
+      });
+    }
+
+    if (typeof env.EMAIL_SES_CREDENTIALS__ACCESS_KEY_ID != "string")
+      return res.send({ status: "env: aws access key missing 🐱‍👤" });
+    if (typeof env.EMAIL_SES_CREDENTIALS__SECRET_ACCESS_KEY != "string")
+      return res.send({ status: "env: aws secret key missing 👻" });
+    if (typeof env.EMAIL_SES_REGION != "string")
+      return res.send({ status: "env: aws region missing 🌎" });
 
     (async () => {
       try {
