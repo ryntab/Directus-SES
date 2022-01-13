@@ -1,6 +1,7 @@
 
 
 
+
 # Directus SES 💬
 An extension for sending emails with AWS SES. 
 > Disclaimer: this is currently not intended for a production environment.
