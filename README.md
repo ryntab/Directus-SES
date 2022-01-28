@@ -59,8 +59,8 @@ To use a created template, pass the template name in your POST request along wit
 In this example, a template called `alert.handlebars` will be selected from the `views` folder and the context will be passed to the template.
 
 If you're unfamiliar with Handlebars, context can be referenced in a template with this syntax `{{{title}}` [@data variables](https://handlebarsjs.com/api-reference/data-variables.html#root)
-```
-{JSON
+```JSON
+{
   "from": "hello@ryntab.com",
   "to": "*********@gmail.com",
   "subject": "This email was made with Handlebars",
