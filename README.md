@@ -60,18 +60,18 @@ In this example, a template called `alert.handlebars` will be selected from the 
 
 If you're unfamiliar with Handlebars, context can be referenced in a template with this syntax `{{{title}}` [@data variables](https://handlebarsjs.com/api-reference/data-variables.html#root)
 ```
-{
+{JSON
   "from": "hello@ryntab.com",
   "to": "*********@gmail.com",
   "subject": "This email was made with Handlebars",
 	"template" : "alert",
 	"context" : {
-			"title": "Im a title!",
-			"subtitle": "Im a subtitle!",
-			"body": "Im the body!"
-		}
-  }
-  ```
+		"title": "Im a title!",
+		"subtitle": "Im a subtitle!",
+		"body": "Im the body!"
+	}
+}
+```
 
 ## Environment Variables
 ```
