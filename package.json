@@ -8,7 +8,7 @@
 	],
 	"directus:extension": {
 		"type": "endpoint",
-		"path": "dist/index.js",
+		"path": "index.js",
 		"source": "src/index.js",
 		"host": "^9.4.3"
 	},
@@ -19,6 +19,7 @@
 		"@directus/extensions-sdk": "9.4.3"
 	},
 	"dependencies": {
-		"nodemailer": "^6.7.2"
+		"nodemailer": "^6.7.2",
+		"nodemailer-express-handlebars": "^4.0.0"
 	}
 }
