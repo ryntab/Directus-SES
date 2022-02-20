@@ -1,6 +1,6 @@
 # Directus SES 💬
 An extension for sending emails with AWS SES. 
-> Disclaimer: this is currently not intended for a production environment.
+> Disclaimer: this is currently not intended for a production environment. 
 
 ## Installation
 - Download or fork the repository
@@ -16,7 +16,7 @@ An extension for sending emails with AWS SES.
 
 
 ## API Reference
-This extension was made for sending notifications with Directus & AWS SES. Since it is limited in scope, certain SES api features are not currently supported. 
+This extension was made for sending notifications with Directus & AWS SES through the Directus API. Since it is limited in scope, certain SES api features are not currently supported.
 
 |  Type| Supported |
 |--|--|
