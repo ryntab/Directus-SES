@@ -16,7 +16,7 @@ An extension for sending emails with AWS SES.
 
 
 ## API Reference
-This extension was made for sending notifications with Directus & AWS SES through the Directus API. Since it is limited in scope, certain SES api features are not currently supported.
+This extension was made for sending notifications with Directus & AWS SES through the Directus API. Since it is limited in scope, certain SES api features are not currently supported. In most cases mailerService can be used for action based emails.
 
 |  Type| Supported |
 |--|--|
