@@ -1,7 +1,6 @@
 # Directus SES 💬
 An extension for sending emails with AWS SES. 
-> Disclaimer: this is currently not intended for a production environment. 
-
+> [It's recommended that you use this extension instead](https://github.com/ryntab/Directus-Mailer) 
 ## Installation
 - Download or fork the repository
 - Install the requirements\
